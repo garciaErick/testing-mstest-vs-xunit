@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoBot", "CasinoBot\CasinoBot.csproj", "{3EE9C2D6-6618-4090-AE30-E70E145F6BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartIrc4Net", "SmartIrc4Net\SmartIrc4Net.csproj", "{B5976433-67DC-4D9B-825A-DEB8FB35272F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EE9C2D6-6618-4090-AE30-E70E145F6BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE9C2D6-6618-4090-AE30-E70E145F6BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE9C2D6-6618-4090-AE30-E70E145F6BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE9C2D6-6618-4090-AE30-E70E145F6BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5976433-67DC-4D9B-825A-DEB8FB35272F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5976433-67DC-4D9B-825A-DEB8FB35272F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5976433-67DC-4D9B-825A-DEB8FB35272F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5976433-67DC-4D9B-825A-DEB8FB35272F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
