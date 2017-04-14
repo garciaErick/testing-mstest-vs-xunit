@@ -12,3 +12,5 @@ C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.execution.desk
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.csprojResolveAssemblyReference.cache
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.dll
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.pdb
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\Console BlackJack cs.exe
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\Console BlackJack cs.pdb

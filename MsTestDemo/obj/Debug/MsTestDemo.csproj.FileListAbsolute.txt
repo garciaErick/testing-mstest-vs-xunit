@@ -3,3 +3,6 @@ C:\repositories\testing-mstest-vs-xunit\MsTestDemo\bin\Debug\MsTestDemo.pdb
 C:\repositories\testing-mstest-vs-xunit\MsTestDemo\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\repositories\testing-mstest-vs-xunit\MsTestDemo\obj\Debug\MsTestDemo.dll
 C:\repositories\testing-mstest-vs-xunit\MsTestDemo\obj\Debug\MsTestDemo.pdb
+C:\repositories\testing-mstest-vs-xunit\MsTestDemo\obj\Debug\MsTestDemo.csprojResolveAssemblyReference.cache
+C:\repositories\testing-mstest-vs-xunit\MsTestDemo\bin\Debug\Console BlackJack cs.exe
+C:\repositories\testing-mstest-vs-xunit\MsTestDemo\bin\Debug\Console BlackJack cs.pdb

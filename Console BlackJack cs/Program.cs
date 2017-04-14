@@ -36,6 +36,9 @@ namespace Console_BlackJack_cs
 
         static void Main(string[] args)
         {
+            //Downloaded code
+            Blackjack bjGame = new Blackjack();
+            bjGame.beginGame();
 
             string[] hearts = Enumerable.Range(2, 9).Select(x => x.ToString() + (Char)3).ToArray();
             hearts = hearts.Concat(new string[] {

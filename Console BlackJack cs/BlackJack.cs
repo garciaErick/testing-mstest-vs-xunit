@@ -1,21 +1,33 @@
 ﻿using System;
 
-namespace Blackjack
+namespace Console_BlackJack_cs
 {
-    class Blackjack
+    public class Blackjack
     {
-        static string[] playerCards = new string[11];
-        static string hitOrStay = "";
-        static int total = 0, count = 1, dealerTotal = 0;
-        static Random cardRandomizer = new Random();
 
-        static void Main(string[] args)
+        public string[] playerCards;
+        string hitOrStay;
+        int total, count, dealerTotal;
+        Random cardRandomizer;
+
+        public Blackjack()
+        {
+            playerCards = new string[11];
+            hitOrStay = "";
+            total = 0;
+            count = 1;
+            dealerTotal = 0;
+            cardRandomizer = new Random();
+        }
+
+
+        public void beginGame()
         {
             Console.Title = "Seth's Blackjack!";
             Start();
         }
 
-        static void Start()
+        public void Start()
         {
             dealerTotal = cardRandomizer.Next(15, 22);
             playerCards[0] = Deal();
@@ -28,7 +40,7 @@ namespace Blackjack
             Game();
         }
 
-        static void Game()
+        public void Game()
         {
             if (hitOrStay.Equals("hit"))
             {
@@ -51,7 +63,7 @@ namespace Blackjack
             Console.ReadLine();
         }
 
-        static string Deal()
+        public string Deal()
         {
             string Card = "";
             int cards = cardRandomizer.Next(1, 14);
@@ -103,7 +115,7 @@ namespace Blackjack
             return Card;
         }
 
-        static void Hit()
+        public void Hit()
         {
             count += 1;
             playerCards[count] = Deal();
@@ -129,7 +141,7 @@ namespace Blackjack
             }
         }
 
-        static void PlayAgain()
+        public void PlayAgain()
         {
             string playAgain = "";
             do

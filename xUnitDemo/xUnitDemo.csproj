@@ -72,6 +72,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Console BlackJack cs\Console BlackJack cs.csproj">
+      <Project>{60feedd9-6b31-4188-ad91-a6aa4cf97bc2}</Project>
+      <Name>Console BlackJack cs</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

@@ -7,3 +7,6 @@ C:\Users\erick\Desktop\C#\Console BlackJack cs\obj\Debug\Console BlackJack cs.pd
 C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\bin\Debug\Console BlackJack cs.exe.config
 C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\obj\Debug\Console BlackJack cs.exe
 C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\obj\Debug\Console BlackJack cs.pdb
+C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\bin\Debug\Console BlackJack cs.exe
+C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\bin\Debug\Console BlackJack cs.pdb
+C:\repositories\testing-mstest-vs-xunit\Console BlackJack cs\obj\Debug\Console BlackJack cs.csprojResolveAssemblyReference.cache

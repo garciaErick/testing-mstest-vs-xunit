@@ -10,9 +10,11 @@ namespace MsTestDemo
         [TestMethod]
         public void TestMethod1()   
         {
-            Program bjGame = new Program();
-            Assert.Equals('1', )
-
+            Blackjack bjGame = new Blackjack();
+            int noOfCards = bjGame.playerCards.Length;
+            bjGame.Hit();
+            int noOfCardsAfterHit = bjGame.playerCards.Length;
+            Assert.AreNotEqual(noOfCards, noOfCardsAfterHit );
         }
     }
 }
