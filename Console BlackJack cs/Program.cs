@@ -34,7 +34,7 @@ namespace Console_BlackJack_cs
             Console.ReadLine();
         }
 
-         static void DealHand()
+        static void DealHand()
         {
             if (deck.GetAmountOfRemainingCrads() < 20)
             {
@@ -45,12 +45,15 @@ namespace Console_BlackJack_cs
             Console.WriteLine("Remaining Cards: {0}", deck.GetAmountOfRemainingCrads());
             Console.WriteLine("Current Chips: {0}", chips);
             Console.WriteLine("How much would you like to bet? (1 - {0})", chips);
-            string input = Console.ReadLine().Trim().Replace(" ", "");
+            string input = Console.ReadLine();
+            input.Trim().Replace(" ", "");
+
             int betAmount;
             while (!Int32.TryParse(input, out betAmount) || betAmount < 1 || betAmount > chips)
             {
                 Console.WriteLine("amount is illegal. How much would you like to bet? (1 - {0})", chips);
-                input = Console.ReadLine().Trim().Replace(" ", "");
+                input = Console.ReadLine();
+                input.Trim().Replace(" ", "");
             }
             Console.WriteLine();
 
@@ -268,6 +271,14 @@ namespace Console_BlackJack_cs
                 Console.ReadLine();
             }
             while (true);
+        }
+        
+        public string getUserInput(string input, bool test)
+        {
+            if (test)
+                return input;
+            else
+                return Console.ReadLine();
         }
     }
 }
