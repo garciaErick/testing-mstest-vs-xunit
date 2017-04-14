@@ -66,20 +66,40 @@ namespace BankingSystem
             m_balance += amount;
         }
 
-        public void Deposit()
+        public double Deposit(int depositAmount)
         {
-            //TODO:
+            m_balance = m_balance + (double)depositAmount;
+            return m_balance;
         }
 
-        public void WithDraw()
+        public double WithDraw(int withdrawAmount)
         {
-            //TODO:
+            m_balance = m_balance - (double)withdrawAmount;
+            return m_balance;
         }
 
-        public void Transfer()
+        public double Transfer(BankAccount fromAccount, BankAccount toAccount, double amount)
         {
-            //TODO:
+            if (validTransfer(toAccount, amount))
+            {
+                fromAccount.m_balance = fromAccount.m_balance + amount;
+                toAccount.m_balance = toAccount.m_balance - amount;
+                return fromAccount.m_balance;
+            }
+            else
+               return fromAccount.m_balance;
+
         }
+
+        public Boolean validTransfer(BankAccount account, double amountTransfer)
+        {
+
+            if (account.Balance >= amountTransfer)
+                return true;
+            else
+                return false;
+        }
+
 
         private void FreezeAccount()
         {
@@ -91,7 +111,7 @@ namespace BankingSystem
             m_frozen = false;
         }
 
-        
+
 
     }
 }
