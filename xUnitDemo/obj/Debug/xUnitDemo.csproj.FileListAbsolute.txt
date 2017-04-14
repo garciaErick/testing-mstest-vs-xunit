@@ -5,7 +5,6 @@ C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.abstractions.d
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.assert.dll
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.core.dll
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.execution.desktop.dll
-C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.abstractions.xml
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.assert.xml
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.core.xml
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.execution.desktop.xml
@@ -14,3 +13,6 @@ C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.dll
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.pdb
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\Console BlackJack cs.exe
 C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\Console BlackJack cs.pdb
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.runner.utility.net35.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.runner.reporters.net452.dll
