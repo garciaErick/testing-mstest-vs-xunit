@@ -1,0 +1,14 @@
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xUnitDemo.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xUnitDemo.pdb
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.abstractions.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.assert.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.core.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.execution.desktop.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.abstractions.xml
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.assert.xml
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.core.xml
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\bin\Debug\xunit.execution.desktop.xml
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.csprojResolveAssemblyReference.cache
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.dll
+C:\repositories\testing-mstest-vs-xunit\xUnitDemo\obj\Debug\xUnitDemo.pdb

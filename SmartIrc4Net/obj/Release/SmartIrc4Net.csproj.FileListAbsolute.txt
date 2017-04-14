@@ -1,0 +1,5 @@
+C:\repositories\testing-mstest-vs-xunit\SmartIrc4Net\bin\Release\SmartIrc4Net.dll
+C:\repositories\testing-mstest-vs-xunit\SmartIrc4Net\bin\Release\SmartIrc4Net.pdb
+C:\repositories\testing-mstest-vs-xunit\SmartIrc4Net\obj\Release\SmartIrc4Net.csprojResolveAssemblyReference.cache
+C:\repositories\testing-mstest-vs-xunit\SmartIrc4Net\obj\Release\SmartIrc4Net.dll
+C:\repositories\testing-mstest-vs-xunit\SmartIrc4Net\obj\Release\SmartIrc4Net.pdb

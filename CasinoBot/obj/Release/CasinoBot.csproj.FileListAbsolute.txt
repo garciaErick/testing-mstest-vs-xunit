@@ -1,0 +1,10 @@
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\bin\Release\CasinoBot.exe
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\bin\Release\CasinoBot.pdb
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\bin\Release\SmartIrc4Net.dll
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\bin\Release\SmartIrc4Net.pdb
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.csprojResolveAssemblyReference.cache
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.Main.resources
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.Properties.Resources.resources
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.csproj.GenerateResource.Cache
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.exe
+C:\repositories\testing-mstest-vs-xunit\CasinoBot\obj\Release\CasinoBot.pdb
