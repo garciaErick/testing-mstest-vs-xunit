@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Console_BlackJack_cs
 {
-    class Program
+    public class Program
     {
 
 
