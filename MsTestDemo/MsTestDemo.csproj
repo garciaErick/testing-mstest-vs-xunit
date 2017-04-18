@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Console BlackJack cs\Console BlackJack cs.csproj">
+    <ProjectReference Include="..\Console BlackJack cs\BankingSystem.csproj">
       <Project>{60feedd9-6b31-4188-ad91-a6aa4cf97bc2}</Project>
-      <Name>Console BlackJack cs</Name>
+      <Name>BankingSystem</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

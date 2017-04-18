@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitDemo", "xUnitDemo\xUni
 		{60FEEDD9-6B31-4188-AD91-A6AA4CF97BC2} = {60FEEDD9-6B31-4188-AD91-A6AA4CF97BC2}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console BlackJack cs", "Console BlackJack cs\Console BlackJack cs.csproj", "{60FEEDD9-6B31-4188-AD91-A6AA4CF97BC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingSystem", "Console BlackJack cs\BankingSystem.csproj", "{60FEEDD9-6B31-4188-AD91-A6AA4CF97BC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

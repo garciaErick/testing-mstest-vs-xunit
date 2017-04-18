@@ -5,110 +5,90 @@ namespace BankingSystem
 
     public class BankAccount
     {
-        private string m_customerName;
-
-        private double m_balance;
-
-        private bool m_frozen = false;
-
-        private BankAccount()
-        {
-        }
+        private bool _mFrozen;
 
         public BankAccount(string customerName, double balance)
         {
-            m_customerName = customerName;
-            m_balance = balance;
+            CustomerName = customerName;
+            Balance = balance;
         }
 
-        public string CustomerName
-        {
-            get { return m_customerName; }
-        }
+        public string CustomerName { get; }
 
-        public double Balance
-        {
-            get { return m_balance; }
-        }
+        public double Balance { get; private set; }
 
         public void Debit(double amount)
         {
-            if (m_frozen)
+            if (_mFrozen)
             {
                 throw new Exception("Account frozen");
             }
 
-            if (amount > m_balance)
+            if (amount > Balance)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException(nameof(amount));
             }
 
             if (amount < 0)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException(nameof(amount));
             }
 
-            m_balance += amount; // intentionally incorrect code  
+            Balance += amount; // intentionally incorrect code  
         }
 
         public void Credit(double amount)
         {
-            if (m_frozen)
+            if (_mFrozen)
             {
                 throw new Exception("Account frozen");
             }
 
             if (amount < 0)
             {
-                throw new ArgumentOutOfRangeException("amount");
+                throw new ArgumentOutOfRangeException(nameof(amount));
             }
 
-            m_balance += amount;
+            Balance += amount;
         }
 
-        public double Deposit(int depositAmount)
+        public double Deposit(double depositAmount)
         {
-            m_balance = m_balance + (double)depositAmount;
-            return m_balance;
+            Balance = Balance + depositAmount;
+            return Balance;
         }
 
-        public double WithDraw(int withdrawAmount)
+        public double WithDraw(double withdrawAmount)
         {
-            m_balance = m_balance - (double)withdrawAmount;
-            return m_balance;
+            Balance = Balance - withdrawAmount;
+            return Balance;
         }
 
         public double Transfer(BankAccount fromAccount, BankAccount toAccount, double amount)
         {
-            if (validTransfer(toAccount, amount))
+            if (ValidTransfer(toAccount, amount))
             {
-                fromAccount.m_balance = fromAccount.m_balance + amount;
-                toAccount.m_balance = toAccount.m_balance - amount;
-                return fromAccount.m_balance;
+                fromAccount.Balance = fromAccount.Balance + amount;
+                toAccount.Balance = toAccount.Balance - amount;
+                return fromAccount.Balance;
             }
-            else
-               return fromAccount.m_balance;
-
+            return fromAccount.Balance;
         }
 
-        public Boolean validTransfer(BankAccount account, double amountTransfer)
+        public bool ValidTransfer(BankAccount account, double amountTransfer)
         {
-
-            if (account.Balance >= amountTransfer)
-                return true;
-            else
-                return false;
+            return account.Balance >= amountTransfer;
         }
 
 
         private void FreezeAccount()
         {
-            m_frozen = true;
+            _mFrozen = true;
         }
 
         private void UnfreezeAccount()
         {
-            m_frozen = false;
+            _mFrozen = false;
         }
 
 
