@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace MyFirstUnitTests
+namespace xUnitDemo
 {
     public class Class1
     {

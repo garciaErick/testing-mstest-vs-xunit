@@ -54,12 +54,15 @@ namespace BankingSystem
 
         public double Deposit(double depositAmount)
         {
-            Balance = Balance + depositAmount;
-            return Balance;
+            if (depositAmount < 0)
+                throw new Exception();
+            return Balance + depositAmount;
         }
 
         public double WithDraw(double withdrawAmount)
         {
+            if (withdrawAmount > Balance)
+                throw new Exception();
             Balance = Balance - withdrawAmount;
             return Balance;
         }
@@ -75,9 +78,9 @@ namespace BankingSystem
             return fromAccount.Balance;
         }
 
-        public bool ValidTransfer(BankAccount account, double amountTransfer)
+        public bool ValidTransfer(BankAccount account, double transferAmount)
         {
-            return account.Balance >= amountTransfer;
+            return account.Balance >= transferAmount && transferAmount > 0 && !(transferAmount < 0);
         }
 
 
