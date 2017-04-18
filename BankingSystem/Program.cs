@@ -6,11 +6,10 @@ namespace BankingSystem
     {
         public static void Main()
         {
-            var ba = new BankAccount("Mr. Bryan Walton", -11.99);
-
-//            ba.Credit(5.77);
-//            PrintAccount(ba);
-//            ba.Debit(11.22);
+            var ba = new BankAccount("Mr. Bryan Walton", 11.99);
+            ba.Credit(5.77);
+            PrintAccount(ba);
+            ba.Debit(11.22);
             ba.WithDraw(11);
             PrintAccount(ba);
             Console.WriteLine("\nPress any key to exit.");
