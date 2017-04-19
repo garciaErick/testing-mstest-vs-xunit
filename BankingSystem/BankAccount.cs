@@ -56,6 +56,8 @@ namespace BankingSystem
         {
             if (depositAmount < 0)
                 throw new Exception();
+            if (depositAmount == 0)
+                throw new Exception("Deposit amount is an invalid since is 0");
             return Balance + depositAmount;
         }
 
@@ -63,27 +65,27 @@ namespace BankingSystem
         {
             if (withdrawAmount > Balance)
                 throw new Exception();
+            if (withdrawAmount == 0)
+                throw new Exception("Withdraw amount is 0");
             Balance = Balance - withdrawAmount;
             return Balance;
         }
 
-        public double Transfer(BankAccount fromAccount, BankAccount toAccount, double amount)
+        public double Transfer(BankAccount toAccount, double amount)
         {
             if (ValidTransfer(toAccount, amount))
             {
-                fromAccount.Balance = fromAccount.Balance + amount;
+                this.Balance = this.Balance + amount;
                 toAccount.Balance = toAccount.Balance - amount;
-                return fromAccount.Balance;
+                return this.Balance;
             }
-            return fromAccount.Balance;
+            return this.Balance;
         }
 
         public bool ValidTransfer(BankAccount account, double transferAmount)
         {
             return account.Balance >= transferAmount && transferAmount > 0 && !(transferAmount < 0);
         }
-
-
         private void FreezeAccount()
         {
             _mFrozen = true;
