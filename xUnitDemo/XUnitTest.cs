@@ -4,7 +4,7 @@ using Xunit;
 namespace xUnitDemo
 
 {
-    public class Class1
+    public class XUnitTest
     {
 
         //TODO: maybe stress test the methods on what they do with large ammounts of money

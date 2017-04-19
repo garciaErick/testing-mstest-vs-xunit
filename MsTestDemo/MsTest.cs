@@ -5,7 +5,7 @@ using System;
 namespace MsTestDemo
 {
     [TestClass]
-    public class UnitTest1
+    public class MsTest
     {
 
         [TestMethod]
