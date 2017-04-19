@@ -75,8 +75,8 @@ namespace BankingSystem
         {
             if (ValidTransfer(toAccount, amount))
             {
-                this.Balance = this.Balance + amount;
-                toAccount.Balance = toAccount.Balance - amount;
+                this.Balance = this.Balance - amount;
+                toAccount.Balance = toAccount.Balance + amount;
                 return this.Balance;
             }
             return this.Balance;
