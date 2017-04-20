@@ -17,15 +17,38 @@ namespace xUnitDemo
         [Fact]
         public void Withdraw_AmmountIsZero_ExceptionThrown()
         {
-            BankAccount ba = new BankAccount("Eric Camacho", 1000);
-            Assert.Throws<Exception>(() => ba.WithDraw(0));
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(0));
         }
 
         [Fact]
-        public void Withdraw_AmountLesThanBalance_ReturnNewBalance()
+        public void Withdraw_AmmountIsNegative_ExceptionThrown()
         {
-            BankAccount bankAc3 = new BankAccount("Camacho", 500);
-            Assert.Equal(200, bankAc3.WithDraw(300));
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(-1));
+        }
+
+        [Theory]
+        [InlineData(1002)]
+        [InlineData(1001)]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(-2)]
+        public void Withdraw_IncorrectAmount_ExceptionThrown(double amount)
+        {
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(amount));
+        }
+
+        [Theory]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(-2)]
+        public void Withdraw_CaptureException(double amount)
+        {
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+           Exception ex= Assert.Throws<Exception>(() => ba1.WithDraw(amount));
+            Assert.Equal("Not Valid Amount To Withdraw", ex.Message);
         }
 
         [Fact]
