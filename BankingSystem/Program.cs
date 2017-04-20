@@ -6,12 +6,21 @@ namespace BankingSystem
     {
         public static void Main()
         {
-            var ba = new BankAccount("Mr. Bryan Walton", 11.99);
-            ba.Credit(5.77);
+            var ba = new BankAccount("Walter White", 400000);
+            var ba2 = new BankAccount("Saul Goodman", 50);
+            Console.WriteLine("Original Bank Accounts");
             PrintAccount(ba);
-            ba.Debit(11.22);
-            ba.WithDraw(11);
+            PrintAccount(ba2);
+            ba.WithDraw(10000);
+            Console.WriteLine("After Withdrawing 10000");
             PrintAccount(ba);
+            ba.Deposit(5000);
+            Console.WriteLine("After Depositing 5000");
+            PrintAccount(ba);
+            ba.Transfer(ba2, 100000);
+            Console.WriteLine("After Transfering 10000 to Saul Goodman from Walter White");
+            PrintAccount(ba);
+            PrintAccount(ba2);
             Console.WriteLine("\nPress any key to exit.");
             Console.ReadKey();
 

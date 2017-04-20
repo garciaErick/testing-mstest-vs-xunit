@@ -5,8 +5,6 @@ namespace BankingSystem
 
     public class BankAccount
     {
-        private bool _mFrozen;
-
         public BankAccount(string customerName, double balance)
         {
             CustomerName = customerName;
@@ -17,48 +15,14 @@ namespace BankingSystem
 
         public double Balance { get; private set; }
 
-        public void Debit(double amount)
-        {
-            if (_mFrozen)
-            {
-                throw new Exception("Account frozen");
-            }
-
-            if (amount > Balance)
-            {
-                throw new ArgumentOutOfRangeException(nameof(amount));
-            }
-
-            if (amount < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(amount));
-            }
-
-            Balance += amount; // intentionally incorrect code  
-        }
-
-        public void Credit(double amount)
-        {
-            if (_mFrozen)
-            {
-                throw new Exception("Account frozen");
-            }
-
-            if (amount < 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(amount));
-            }
-
-            Balance += amount;
-        }
-
         public double Deposit(double depositAmount)
         {
             if (depositAmount < 0)
                 throw new Exception();
             if (depositAmount == 0)
                 throw new Exception("Deposit amount is an invalid since is 0");
-            return Balance + depositAmount;
+            Balance += depositAmount;
+            return Balance;
         }
 
         public double WithDraw(double withdrawAmount)
@@ -75,8 +39,8 @@ namespace BankingSystem
         {
             if (ValidTransfer(toAccount, amount))
             {
-                this.Balance = this.Balance + amount;
-                toAccount.Balance = toAccount.Balance - amount;
+                this.Balance = this.Balance - amount;
+                toAccount.Balance = toAccount.Balance + amount;
                 return this.Balance;
             }
             return this.Balance;
@@ -86,17 +50,5 @@ namespace BankingSystem
         {
             return account.Balance >= transferAmount && transferAmount > 0 && !(transferAmount < 0);
         }
-        private void FreezeAccount()
-        {
-            _mFrozen = true;
-        }
-
-        private void UnfreezeAccount()
-        {
-            _mFrozen = false;
-        }
-
-
-
     }
 }
