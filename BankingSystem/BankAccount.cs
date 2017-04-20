@@ -64,9 +64,9 @@ namespace BankingSystem
         public double WithDraw(double withdrawAmount)
         {
             if (withdrawAmount > Balance)
-                throw new Exception();
-            if (withdrawAmount == 0)
-                throw new Exception("Withdraw amount is 0");
+                throw new Exception("Not Enough Funds");
+            if (withdrawAmount <= 0)
+                throw new Exception("Not Valid Amount To Withdraw");
             Balance = Balance - withdrawAmount;
             return Balance;
         }

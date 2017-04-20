@@ -9,15 +9,15 @@ namespace xUnitDemo
         [Fact]
         public void PassingTest()
         {
-            Assert.Equal(4, 2+2);
+            Assert.Equal(4, 2 + 2);
         }
 
-        
+
         [Fact]
         public void Withdraw_AmountGreaterThanBalance_ExceptionThrown()
         {
-            BankAccount ba1 = new BankAccount("Eric Camacho",1000);
-            Assert.Throws<Exception>(()=> ba1.WithDraw(1001));
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(1001));
 
         }
 
@@ -26,6 +26,25 @@ namespace xUnitDemo
         {
             BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
             Assert.Throws<Exception>(() => ba1.WithDraw(0));
+        }
+
+        [Fact]
+        public void Withdraw_AmmountIsNegative_ExceptionThrown()
+        {
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(-1));
+        }
+
+        [Theory]
+        [InlineData(1002)]
+        [InlineData(1001)]
+        [InlineData(0)]
+        [InlineData(-1)]
+        [InlineData(-2)]
+        public void Withdraw_IncorrectAmount_ExceptionThrown(double amount)
+        {
+            BankAccount ba1 = new BankAccount("Eric Camacho", 1000);
+            Assert.Throws<Exception>(() => ba1.WithDraw(amount));
         }
 
         [Fact]
