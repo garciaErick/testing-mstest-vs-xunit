@@ -6,8 +6,6 @@ namespace xUnitDemo
 {
     public class XUnitTest
     {
-
-        //TODO: maybe stress test the methods on what they do with large ammounts of money
         [Fact]
         public void Withdraw_AmountGreaterThanBalance_ExceptionThrown()
         {

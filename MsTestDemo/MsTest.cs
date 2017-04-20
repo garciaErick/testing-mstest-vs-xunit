@@ -7,7 +7,6 @@ namespace MsTestDemo
     [TestClass]
     public class MsTest
     {
-
         [TestMethod]
         [ExpectedException(typeof(Exception))]
         public void Withdraw_AmountGreaterThanBalance_ExceptionThrownv1()
